@@ -29,7 +29,7 @@ class MovieDataSource : NSObject{
     }
     
     func loadMovies() {
-        let service = NetworkManager()
+        let service = MoviesAPI()
         service.getAllFilms()
         service.completionHandler { (movies, status, message) in
             if status {
@@ -58,10 +58,4 @@ extension MovieDataSource: UITableViewDataSource {
 
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(movies[indexPath.row].title!)
-    }
-    
-
 }

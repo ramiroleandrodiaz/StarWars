@@ -14,8 +14,6 @@ protocol MovieListingDelegate: NSObject {
 
 class MovieListingViewController: UIViewController {
 
-    
-
     @IBOutlet weak var moviesTableView: UITableView!
     
     private var dataSource: MovieDataSource!
@@ -68,6 +66,28 @@ extension MovieListingViewController: DataSourceObserver {
 
 extension MovieListingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print()
+        didSelectMovie(movie: self.dataSource.movies[indexPath.row])
+    }
+}
+
+// MARK: - MovieListingDelegate
+
+extension MovieListingViewController: MovieListingDelegate {
+    
+    func didSelectMovie(movie: Movie?) {
+        
+        var retValue: UIViewController!
+        
+        let aSB = UIStoryboard(name: movieCharactersStoryboard, bundle: Bundle.main)
+        
+        if let aVC = aSB.instantiateViewController(withIdentifier: movieCharactersListingVC) as? PeopleListingViewController {
+            aVC.movie = movie
+            retValue = aVC
+        }
+        
+        guard retValue != nil else { return }
+
+        self.navigationController?.pushViewController(retValue, animated: true)
+
     }
 }

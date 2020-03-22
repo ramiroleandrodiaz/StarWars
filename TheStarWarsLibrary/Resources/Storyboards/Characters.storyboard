@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TUZ-2d-ASO">
+            <objects>
+                <navigationController id="j39-Fa-Bbm" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="WmT-gY-Gkw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="giK-bi-wFf" kind="relationship" relationship="rootViewController" id="TdI-RV-uiN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEV-aL-IS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="129"/>
+        </scene>
+        <!--CharactersList-->
+        <scene sceneID="r2n-0e-0WL">
+            <objects>
+                <viewController storyboardIdentifier="CharactersList" title="CharactersList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="giK-bi-wFf" customClass="PeopleListingViewController" customModule="The_Star_Wars_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ig6-jR-gzH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FA5-YA-l3r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FA5-YA-l3r" firstAttribute="leading" secondItem="eBP-km-stf" secondAttribute="leading" id="3SS-LX-1G9"/>
+                            <constraint firstItem="FA5-YA-l3r" firstAttribute="top" secondItem="eBP-km-stf" secondAttribute="top" id="YIE-bp-p1u"/>
+                            <constraint firstItem="eBP-km-stf" firstAttribute="bottom" secondItem="FA5-YA-l3r" secondAttribute="bottom" id="hvB-uK-IiA"/>
+                            <constraint firstItem="eBP-km-stf" firstAttribute="trailing" secondItem="FA5-YA-l3r" secondAttribute="trailing" id="pqw-sA-NUa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eBP-km-stf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fF9-LC-ZA5"/>
+                    <connections>
+                        <outlet property="peopleTableView" destination="FA5-YA-l3r" id="7PW-4c-JXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkv-Dm-83c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="129"/>
+        </scene>
+    </scenes>
+</document>

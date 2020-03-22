@@ -20,7 +20,7 @@ struct Movie: Decodable {
     var title: String?
     var director: String?
     var releaseDate: String?
-    var charactersURLs: [String]?
+    var charactersURLs: [String]
     var episodeNumber: Int?
     
     enum CodingKeys: String, CodingKey {

@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-817" y="-571"/>
         </scene>
-        <!--Movie Listing View Controller-->
+        <!--MoviesList-->
         <scene sceneID="T4f-He-elp">
             <objects>
-                <viewController id="cM6-nt-w0U" customClass="MovieListingViewController" customModule="The_Star_Wars_Library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Movies" title="MoviesList" id="cM6-nt-w0U" customClass="MovieListingViewController" customModule="The_Star_Wars_Library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GzQ-gR-JzP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
