@@ -19,8 +19,6 @@ class NetworkManager {
         self.baseUrl = "https://swapi.co/api/"
     }
     
-
-    
     //MARK :- getAllFilms
     func getAllFilms() {
         AF.request(baseUrl + "films", method: .get, parameters: nil,

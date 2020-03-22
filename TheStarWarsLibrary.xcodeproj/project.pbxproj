@@ -19,11 +19,11 @@
 		8BF83DC92426E7DB00A8AFFF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DC82426E7DB00A8AFFF /* NetworkManager.swift */; };
 		8BF83DCB2426EB5300A8AFFF /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DCA2426EB5300A8AFFF /* Movie.swift */; };
 		8BF83DCD2426F0A700A8AFFF /* MovieCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DCC2426F0A700A8AFFF /* MovieCharacter.swift */; };
-		8BF83DD72426F53300A8AFFF /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DD62426F53300A8AFFF /* MoviesTableViewController.swift */; };
 		8BF83DDB2426FAAF00A8AFFF /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF83DDA2426FAAF00A8AFFF /* MovieCell.xib */; };
 		8BF83DDD2426FAD600A8AFFF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DDC2426FAD600A8AFFF /* MovieCell.swift */; };
-		8BF83DE12427F41A00A8AFFF /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DE02427F41A00A8AFFF /* MoviesViewModel.swift */; };
 		8BF83DE32427F9EF00A8AFFF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BF83DE22427F9EF00A8AFFF /* README.md */; };
+		8BF83DED24280A9700A8AFFF /* MovieListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DEC24280A9700A8AFFF /* MovieListingViewController.swift */; };
+		8BF83DEF24280AF400A8AFFF /* MoviesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DEE24280AF400A8AFFF /* MoviesDataSource.swift */; };
 		9EC04B5DC8E41E4016D7A90E /* Pods_TheStarWarsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245107F13D9AF439A463B4AB /* Pods_TheStarWarsLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +69,11 @@
 		8BF83DC82426E7DB00A8AFFF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8BF83DCA2426EB5300A8AFFF /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8BF83DCC2426F0A700A8AFFF /* MovieCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCharacter.swift; sourceTree = "<group>"; };
-		8BF83DD62426F53300A8AFFF /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 		8BF83DDA2426FAAF00A8AFFF /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		8BF83DDC2426FAD600A8AFFF /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		8BF83DE02427F41A00A8AFFF /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		8BF83DE22427F9EF00A8AFFF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		8BF83DEC24280A9700A8AFFF /* MovieListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingViewController.swift; sourceTree = "<group>"; };
+		8BF83DEE24280AF400A8AFFF /* MoviesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataSource.swift; sourceTree = "<group>"; };
 		DE02AE84DFDADA7369CAFEDA /* Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig"; path = "Target Support Files/Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests/Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,8 +262,8 @@
 		8BF83DDE2427F21900A8AFFF /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				8BF83DD62426F53300A8AFFF /* MoviesTableViewController.swift */,
-				8BF83DE02427F41A00A8AFFF /* MoviesViewModel.swift */,
+				8BF83DEC24280A9700A8AFFF /* MovieListingViewController.swift */,
+				8BF83DEE24280AF400A8AFFF /* MoviesDataSource.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -527,13 +527,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BF83DDD2426FAD600A8AFFF /* MovieCell.swift in Sources */,
-				8BF83DD72426F53300A8AFFF /* MoviesTableViewController.swift in Sources */,
 				8BF83DC92426E7DB00A8AFFF /* NetworkManager.swift in Sources */,
 				8B07C2652426D1C900A2A4EF /* AppDelegate.swift in Sources */,
 				8BF83DCD2426F0A700A8AFFF /* MovieCharacter.swift in Sources */,
+				8BF83DEF24280AF400A8AFFF /* MoviesDataSource.swift in Sources */,
 				8B07C2672426D1C900A2A4EF /* SceneDelegate.swift in Sources */,
 				8BF83DCB2426EB5300A8AFFF /* Movie.swift in Sources */,
-				8BF83DE12427F41A00A8AFFF /* MoviesViewModel.swift in Sources */,
+				8BF83DED24280A9700A8AFFF /* MovieListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

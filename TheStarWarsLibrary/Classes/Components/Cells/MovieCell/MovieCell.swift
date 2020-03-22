@@ -15,9 +15,11 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var directorLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
+    static let identifier = "MovieCell"
+    static let rowHeight: CGFloat = 100
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func configure(with movie: Movie){
