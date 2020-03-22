@@ -23,6 +23,7 @@
 		8BF83DDB2426FAAF00A8AFFF /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF83DDA2426FAAF00A8AFFF /* MovieCell.xib */; };
 		8BF83DDD2426FAD600A8AFFF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DDC2426FAD600A8AFFF /* MovieCell.swift */; };
 		8BF83DE12427F41A00A8AFFF /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF83DE02427F41A00A8AFFF /* MoviesViewModel.swift */; };
+		8BF83DE32427F9EF00A8AFFF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BF83DE22427F9EF00A8AFFF /* README.md */; };
 		9EC04B5DC8E41E4016D7A90E /* Pods_TheStarWarsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245107F13D9AF439A463B4AB /* Pods_TheStarWarsLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		8BF83DDA2426FAAF00A8AFFF /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		8BF83DDC2426FAD600A8AFFF /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		8BF83DE02427F41A00A8AFFF /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		8BF83DE22427F9EF00A8AFFF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		DE02AE84DFDADA7369CAFEDA /* Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig"; path = "Target Support Files/Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests/Pods-TheStarWarsLibrary-TheStarWarsLibraryUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				8BF83DCF2426F46200A8AFFF /* Resources */,
 				8B07C2642426D1C900A2A4EF /* AppDelegate.swift */,
 				8B07C2662426D1C900A2A4EF /* SceneDelegate.swift */,
+				8BF83DE22427F9EF00A8AFFF /* README.md */,
 				8B07C2722426D1CA00A2A4EF /* Info.plist */,
 			);
 			path = TheStarWarsLibrary;
@@ -393,6 +396,7 @@
 			files = (
 				8B07C2712426D1CA00A2A4EF /* LaunchScreen.storyboard in Resources */,
 				8B07C26E2426D1CA00A2A4EF /* Assets.xcassets in Resources */,
+				8BF83DE32427F9EF00A8AFFF /* README.md in Resources */,
 				8BF83DDB2426FAAF00A8AFFF /* MovieCell.xib in Resources */,
 				8B07C26C2426D1C900A2A4EF /* Main.storyboard in Resources */,
 			);
