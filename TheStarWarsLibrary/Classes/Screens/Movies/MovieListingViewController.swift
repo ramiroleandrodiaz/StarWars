@@ -36,7 +36,6 @@ class MovieListingViewController: UIViewController {
         
         self.refreshControl.addTarget(self, action: #selector(refreshTableView(_:)), for: .valueChanged)
 
-        // start refreshing
     }
     
     @objc private func refreshTableView(_ sender: Any) {
