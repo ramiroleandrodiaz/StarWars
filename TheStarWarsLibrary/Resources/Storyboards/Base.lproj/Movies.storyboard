@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="paU-1m-yZ5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Cdn-qq-kbf">
+            <objects>
+                <navigationController id="paU-1m-yZ5" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="baf-C6-ozu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cM6-nt-w0U" kind="relationship" relationship="rootViewController" id="Me6-gy-XBu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQM-Xk-Ptd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="-571"/>
+        </scene>
+        <!--MoviesList-->
+        <scene sceneID="T4f-He-elp">
+            <objects>
+                <viewController storyboardIdentifier="Movies" title="MoviesList" id="cM6-nt-w0U" customClass="MovieListingViewController" customModule="The_Star_Wars_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GzQ-gR-JzP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sjG-U8-B4q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZUD-KI-epn" firstAttribute="bottom" secondItem="sjG-U8-B4q" secondAttribute="bottom" id="2dP-Bp-blZ"/>
+                            <constraint firstItem="sjG-U8-B4q" firstAttribute="top" secondItem="ZUD-KI-epn" secondAttribute="top" id="6Iz-fY-flE"/>
+                            <constraint firstItem="sjG-U8-B4q" firstAttribute="leading" secondItem="ZUD-KI-epn" secondAttribute="leading" id="Jd9-b7-NHd"/>
+                            <constraint firstItem="ZUD-KI-epn" firstAttribute="trailing" secondItem="sjG-U8-B4q" secondAttribute="trailing" id="asg-Zy-9E0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUD-KI-epn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FG5-mL-15v"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="moviesTableView" destination="sjG-U8-B4q" id="pcg-da-xfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIA-bb-36o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="-571"/>
+        </scene>
+    </scenes>
+</document>

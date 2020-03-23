@@ -1,0 +1,6 @@
+framework module Pods_TheStarWarsLibraryTests {
+  umbrella header "Pods-TheStarWarsLibraryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
